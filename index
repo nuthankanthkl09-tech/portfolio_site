@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NUTHAN KANTH K L — Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">NK</div>
+        <div class="nav-menu">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="resume.html" class="nav-link">Resume</a>
+            <a href="biodata.html" class="nav-link">Bio-data</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="animated-bg"></div>
+        <div class="hero-content">
+            <h1>Hi, I'm Nuthan Kanth K L</h1>
+            <p class="hero-subtitle">I build clean, functional and modern web experiences, experimenting with AI, automation and interactive 3D.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="hero-badges">
+                <span class="badge">⚙️ Aspiring Software Engineer</span>
+                <span class="badge">💻 Loves Python & Backend</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="section-subtitle">Engineering student who loves turning ideas into working projects.</p>
+            
+            <div class="about-grid">
+                <div class="about-card clickable" onclick="openModal('aboutModal')">
+                    <h3>Who I Am</h3>
+                    <p>I'm an engineering student in Computer Science, currently pursuing my degree. I enjoy building real-world projects, from AI-based assistants to full-stack web applications.</p>
+                    <span class="read-more">Read More →</span>
+                </div>
+                
+                <div class="about-card clickable" onclick="openModal('doModal')">
+                    <h3>What I Do</h3>
+                    <p>I focus on clean architecture, maintainable code, and smooth user experiences. I like combining Python, JavaScript, and modern frameworks to build useful tools.</p>
+                    <span class="read-more">Read More →</span>
+                </div>
+                
+                <div class="about-card clickable" onclick="openModal('lookingModal')">
+                    <h3>What I'm Looking For</h3>
+                    <p>Internships, collaborations and opportunities where I can learn, ship projects and work with people who love tech as much as I do.</p>
+                    <span class="read-more">Read More →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <p class="section-subtitle">Tech stack I actively use and explore</p>
+            
+            <div class="skills-grid">
+                <div class="skill-item clickable" onclick="openModal('pythonModal')">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-item clickable" onclick="openModal('jsModal')">
+                    <div class="skill-icon">📱</div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item clickable" onclick="openModal('htmlModal')">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML & CSS</h3>
+                </div>
+                <div class="skill-item clickable" onclick="openModal('djangoModal')">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Django</h3>
+                </div>
+                <div class="skill-item clickable" onclick="openModal('dataModal')">
+                    <div class="skill-icon">📊</div>
+                    <h3>Pandas & NumPy</h3>
+                </div>
+                <div class="skill-item clickable" onclick="openModal('sqlModal')">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>MySQL & SQL</h3>
+                </div>
+                <div class="skill-item clickable" onclick="openModal('gitModal')">
+                    <div class="skill-icon">🔗</div>
+                    <h3>Git & GitHub</h3>
+                </div>
+                <div class="skill-item clickable" onclick="openModal('aiModal')">
+                    <div class="skill-icon">🤖</div>
+                    <h3>Machine Learning</h3>
+                </div>
+            </div>
+
+            <div class="proficiency-section">
+                <h3>Proficiency Levels</h3>
+                <div class="proficiency-grid">
+                    <div class="proficiency-item">
+                        <span>Python & Backend</span>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="width: 85%"></div>
+                        </div>
+                        <span class="proficiency-level">Intermediate</span>
+                    </div>
+                    <div class="proficiency-item">
+                        <span>Web (HTML, CSS, JS)</span>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="width: 75%"></div>
+                        </div>
+                        <span class="proficiency-level">Beginner</span>
+                    </div>
+                    <div class="proficiency-item">
+                        <span>Data Structures & Algorithms</span>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="width: 70%"></div>
+                        </div>
+                        <span class="proficiency-level">Growing</span>
+                    </div>
+                    <div class="proficiency-item">
+                        <span>Django & Full Stack Concepts</span>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="width: 80%"></div>
+                        </div>
+                        <span class="proficiency-level">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <p class="section-subtitle">Some of the things I've been working on recently</p>
+            
+            <div class="projects-grid">
+                <div class="project-card clickable">
+                    <div class="project-tag">Full Stack • Sports Management</div>
+                    <h3>Sports Operations Management System</h3>
+                    <p>A comprehensive platform designed to streamline sports operations, team management, event scheduling, and performance tracking with real-time analytics and reporting.</p>
+                    <ul class="project-features">
+                        <li>Team and player management dashboard</li>
+                        <li>Event scheduling and ticketing system</li>
+                        <li>Real-time performance analytics</li>
+                        <li>Automated reporting and notifications</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p class="section-subtitle">Want to collaborate, discuss an idea or offer an opportunity?</p>
+            
+            <div class="contact-content">
+                <h3>Reach Me</h3>
+                <div class="contact-links">
+                    <a href="mailto:nuthankanthkl05@gmail.com" class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-text">nuthankanthkl05@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <span class="contact-icon">🔗</span>
+                        <div class="contact-info">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-text">github.com/nuthankanthkl</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nuthan-kanth-05338327a" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <div class="contact-info">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-text">linkedin.com/in/nuthan-kanth-05338327a</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Modals for About -->
+<div id="aboutModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('aboutModal')">&times;</span>
+        <h2>Who I Am</h2>
+        <p>I'm an engineering student in Computer Science, currently pursuing my studies with a passion for technology and innovation. I enjoy building real-world projects that solve actual problems, from AI-based assistants to comprehensive full-stack web applications.</p>
+        <p>My journey in tech has been about continuous learning and hands-on experimentation. I believe in the power of clean code, user-centered design, and collaborative development.</p>
+    </div>
+</div>
+
+<div id="doModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('doModal')">&times;</span>
+        <h2>What I Do</h2>
+        <p>I focus on building software solutions with:</p>
+        <ul>
+            <li>Clean, maintainable architecture</li>
+            <li>Smooth and intuitive user experiences</li>
+            <li>Scalable backend systems</li>
+            <li>Modern frontend technologies</li>
+        </ul>
+        <p>I combine Python, JavaScript, and modern frameworks to create tools that matter. Whether it's building APIs, creating interactive interfaces, or working with data, I approach every project with attention to detail.</p>
+    </div>
+</div>
+
+<div id="lookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('lookingModal')">&times;</span>
+        <h2>What I'm Looking For</h2>
+        <p>I'm actively seeking:</p>
+        <ul>
+            <li>Internship opportunities in software development</li>
+            <li>Collaboration on innovative projects</li>
+            <li>Mentorship and learning experiences</li>
+            <li>Full-time roles where I can contribute and grow</li>
+        </ul>
+        <p>I'm passionate about working with teams that value quality, innovation, and continuous improvement. If you think we could build something great together, let's connect!</p>
+    </div>
+</div>
+
+<!-- Modals for Skills -->
+<div id="pythonModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('pythonModal')">&times;</span>
+        <h2>🐍 Python</h2>
+        <p>Expert in Python with experience in:</p>
+        <ul>
+            <li>Object-Oriented Programming</li>
+            <li>Web scraping and automation</li>
+            <li>Data analysis and visualization</li>
+            <li>Backend development with Django</li>
+            <li>Machine learning libraries</li>
+        </ul>
+        <p><strong>Proficiency: Intermediate to Advanced</strong></p>
+    </div>
+</div>
+
+<div id="jsModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('jsModal')">&times;</span>
+        <h2>📱 JavaScript</h2>
+        <p>Proficient in JavaScript for:</p>
+        <ul>
+            <li>Frontend development</li>
+            <li>DOM manipulation</li>
+            <li>React.js applications</li>
+            <li>REST API integration</li>
+            <li>Interactive UI components</li>
+        </ul>
+        <p><strong>Proficiency: Beginner to Intermediate</strong></p>
+    </div>
+</div>
+
+<div id="htmlModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('htmlModal')">&times;</span>
+        <h2>🌐 HTML & CSS</h2>
+        <p>Strong foundation in web markup and styling:</p>
+        <ul>
+            <li>Semantic HTML5</li>
+            <li>Responsive design</li>
+            <li>CSS Flexbox and Grid</li>
+            <li>CSS animations and transitions</li>
+            <li>Cross-browser compatibility</li>
+        </ul>
+        <p><strong>Proficiency: Intermediate</strong></p>
+    </div>
+</div>
+
+<div id="djangoModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('djangoModal')">&times;</span>
+        <h2>⚙️ Django</h2>
+        <p>Full-stack Django development with:</p>
+        <ul>
+            <li>Models, Views, and Templates</li>
+            <li>Django ORM and migrations</li>
+            <li>REST Framework for APIs</li>
+            <li>Authentication and authorization</li>
+            <li>Database design</li>
+        </ul>
+        <p><strong>Proficiency: Intermediate</strong></p>
+    </div>
+</div>
+
+<div id="dataModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('dataModal')">&times;</span>
+        <h2>📊 Pandas & NumPy</h2>
+        <p>Data science libraries for:</p>
+        <ul>
+            <li>Data manipulation and analysis</li>
+            <li>Numerical computing</li>
+            <li>Data cleaning and preprocessing</li>
+            <li>Statistical analysis</li>
+            <li>Data visualization preparation</li>
+        </ul>
+        <p><strong>Proficiency: Beginner to Intermediate</strong></p>
+    </div>
+</div>
+
+<div id="sqlModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('sqlModal')">&times;</span>
+        <h2>🗄️ MySQL & SQL</h2>
+        <p>Database expertise including:</p>
+        <ul>
+            <li>SQL query writing and optimization</li>
+            <li>Database design and normalization</li>
+            <li>MySQL administration</li>
+            <li>Joins, subqueries, and aggregations</li>
+            <li>Backup and recovery</li>
+        </ul>
+        <p><strong>Proficiency: Intermediate</strong></p>
+    </div>
+</div>
+
+<div id="gitModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('gitModal')">&times;</span>
+        <h2>🔗 Git & GitHub</h2>
+        <p>Version control and collaboration:</p>
+        <ul>
+            <li>Git workflows and branching</li>
+            <li>Pull requests and code review</li>
+            <li>Repository management</li>
+            <li>Collaborative development</li>
+            <li>GitHub Actions and automation</li>
+        </ul>
+        <p><strong>Proficiency: Intermediate</strong></p>
+    </div>
+</div>
+
+<div id="aiModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('aiModal')">&times;</span>
+        <h2>🤖 Machine Learning</h2>
+        <p>ML experience with:</p>
+        <ul>
+            <li>Supervised and unsupervised learning</li>
+            <li>Data preprocessing and feature engineering</li>
+            <li>Model training and evaluation</li>
+            <li>Scikit-learn and TensorFlow</li>
+            <li>Performance metrics and optimization</li>
+        </ul>
+        <p><strong>Proficiency: Growing</strong></p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>© 2025 NUTHAN KANTH K L</p>
+        <div class="footer-links">
+            <a href="resume.html">Resume</a>
+            <a href="biodata.html">Bio-data</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
